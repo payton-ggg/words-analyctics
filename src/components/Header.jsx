@@ -1,5 +1,12 @@
+import Hone from "./Hone";
+
 const Header = () => {
-  return <div className="bg"></div>;
+  return (
+    <header>
+      <div className="bg" />
+      <Hone />
+    </header>
+  );
 };
 
 export default Header;

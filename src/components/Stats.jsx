@@ -1,5 +1,5 @@
 const Stats = () => {
-  return <div>Stats</div>;
+  return <section className="stats">SS</section>;
 };
 
 export default Stats;
