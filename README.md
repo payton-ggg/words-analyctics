@@ -1,7 +1,3 @@
-Here's a sample README file for your words analytics website, with some fun smileys added!
-
----
-
 # 📊 Words Analytics Website
 
 Welcome to the **Words Analytics** website! 🚀 This project is built with **React** ⚛️ to help users analyze text and get valuable insights on word usage, frequency, and more! 🔍
