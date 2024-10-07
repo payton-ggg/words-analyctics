@@ -5,11 +5,15 @@ const Textarea = () => {
   const [text, setText] = useState("");
   const [warningText, setWarningText] = useState("");
 
+  const numberOfCharacters = text.length;
+
   const handleChange = (e) => {
     if (e.target.value.includes("<script>")) {
       setWarningText("No script allowed");
     } else if (e.target.value.includes("@")) {
       setWarningText("No @ allowed");
+    } else {
+      setWarningText("");
     }
     setText(e.target.value);
   };
