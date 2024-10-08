@@ -15,7 +15,7 @@ function Stat({ number, label }) {
   return (
     <section className="stat">
       <span
-        className={`stat__number ${number < 0 ? "stat__number--limit" : ""}`}
+        className="stat"
       >
         {number}
       </span>
