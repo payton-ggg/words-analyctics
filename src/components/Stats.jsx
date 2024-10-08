@@ -1,10 +1,11 @@
-const Stats = () => {
+// eslint-disable-next-line react/prop-types
+const Stats = ({ numberOfCharacters, words }) => {
   return (
     <section className="stats">
-      <Stat label="words" />
-      <Stat label="characters" />
-      <Stat label="instagram" />
-      <Stat label="facebook" />
+      <Stat number={numberOfCharacters} label="characters" />
+      <Stat number={words} label="words" />
+      <Stat number={280 - numberOfCharacters} label="instagram" />
+      <Stat number={2800 - numberOfCharacters} label="facebook" />
     </section>
   );
 };

@@ -1,11 +1,9 @@
 import { useState } from "react";
 import Warning from "./Warning";
 
-const Textarea = () => {
-  const [text, setText] = useState("");
+// eslint-disable-next-line react/prop-types
+const Textarea = ({ setText, text }) => {
   const [warningText, setWarningText] = useState("");
-
-  const numberOfCharacters = text.length;
 
   const handleChange = (e) => {
     if (e.target.value.includes("<script>")) {
